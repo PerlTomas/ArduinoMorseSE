@@ -29,7 +29,7 @@
 			String _LetterCode[27];
 			String _NumberCode[11];
 			String _SweLetterCode[4];
-			String _PunctuationCode[4];
+			String _PunctuationCode[6];
 	};
 
 #endif

@@ -56,6 +56,8 @@ MorseSWE::MorseSWE(byte BuzzPin, unsigned int ToneFrequency, int cpm) {
 	_PunctuationCode[0]={".-.-.-"};
 	_PunctuationCode[1]={"-..-."};
 	_PunctuationCode[2]={"..--.."};
+	_PunctuationCode[3]={"--..--"};
+	_PunctuationCode[4]={"-...-"};
 }
 
 void MorseSWE::Code(String msg) {
@@ -90,6 +92,12 @@ void MorseSWE::Code(String msg) {
 	}
 	if (Number==63) { // ?
 		encodePunctuation(2);
+	}
+	if (Number==44) { // ,
+		encodePunctuation(3);
+	}
+	if (Number==61) { // =
+		encodePunctuation(4);
 	}
   }
 }
