@@ -165,6 +165,5 @@ void MorseSWE::encodePunctuation(unsigned int Nr) {
 			Dot();
 		}
 	}
-	Serial.println();
 	delay(3*_tunit);
 }
